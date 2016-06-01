@@ -4,5 +4,8 @@
 # Imports all alias files #
 ###########################
 
-test "./commonAliases.sh" && source "./commonAliases.sh"
-test "./gitAliases.sh" && source "./gitAliases.sh"
+if [ -d $UTILITIESDIR ]; then
+  source $UTILITIESDIR/commonAliases.sh
+  source $UTILITIESDIR/gitAliases.sh
+fi
+
