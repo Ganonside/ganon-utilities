@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 ###################################################
 # Contains aliases for commonly used git commands #
