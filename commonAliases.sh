@@ -4,6 +4,9 @@
 # Contains aliases for commonly used commands #
 ###############################################
 
+alias resource="source ~/.zshrc"
+alias refresh=resource
+
 # Show hidden files in Finder
 alias showfiles='
   defaults write com.apple.finder AppleShowAllFiles true;
@@ -21,6 +24,7 @@ alias ....="cd ../../.."
 
 if [ -d $UTILITIESDIR ]; then
   alias utilities=$UTILITIESDIR
+  alias utils=utilities
 else
   echo $UTILITIESDIR is not a directory
 fi
