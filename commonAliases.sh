@@ -18,3 +18,9 @@ alias hideFiles='
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+
+if [ -d $UTILITIESDIR ]; then
+  alias utilities=$UTILITIESDIR
+else
+  echo $UTILITIESDIR is not a directory
+fi
